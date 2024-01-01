@@ -5,7 +5,7 @@
     <link rel="icon" type="image/x-icon" href="./images/favicon.ico" />
   </head>
   <body style="text-align: center">
-    <script nonce="x1olKJxYmHhwj2UksvE1Ig">
+    <script>
       window.google = {};
       window.google.doodle = {};
       window.google.doodle.l10n = {
@@ -3235,31 +3235,25 @@
     </script>
     <style>
       #hplogo {
-        height: 690px;
+        height: 90vh;
         outline: none;
         overflow: hidden;
         position: relative;
-        width: 1224px;
+        width: 160vh;
         -moz-user-select: -moz-none;
         -ms-user-select: none;
         -webkit-tap-highlight-color: transparent;
         -webkit-user-select: none;
         user-select: none;
+        margin: auto;
       }
       #fpdoodle #hplogo {
-        height: 1080px;
-        width: 1920px;
+        height: 100%;
+        width: 100%;
       }
       #hplogo canvas {
         background: url("./images/cta_bg.png") no-repeat center;
         background-size: contain;
-        height: 100%;
-        width: 100%;
-      }
-      #dood #hplogo canvas {
-        background: url("./images/ntp_bg.jpg") no-repeat;
-        background-size: contain;
-        cursor: pointer;
         height: 100%;
         width: 100%;
       }
@@ -3276,7 +3270,7 @@
     >
       <canvas width="640" height="360" dir="{{LANGUAGE_DIRECTION}}"></canvas>
     </div>
-    <script nonce="x1olKJxYmHhwj2UksvE1Ig">
+    <script>
       (function () {
         var a = this || self;
         var b = function (p, h) {
@@ -3331,7 +3325,7 @@
         }
       }).call(this);
     </script>
-    <script nonce="x1olKJxYmHhwj2UksvE1Ig">
+    <script>
       (function () {
         (function () {
           function q(a, e, l) {
@@ -3355,9 +3349,7 @@
             f = /[&=]?hl=([^&]*)/.exec(c),
             n = f ? f[1] : "en";
           c = (f = /[&=]?gl=([^&]*)/.exec(c)) ? f[1] : "ALL";
-          f = {
-            "{{LOGO_ALT_TEXT_HTML}}": "{{LOGO_ALT_TEXT}}",
-          };
+          f = { "{{LOGO_ALT_TEXT_HTML}}": "{{LOGO_ALT_TEXT}}" };
           m = v(m, n, c) || {};
           for (var b in m) {
             var p = f[b] ? m[f[b]] : m[b],

@@ -13,9 +13,7 @@
   else {
     var ca;
     a: {
-      var da = {
-          a: !0,
-        },
+      var da = { a: !0 },
         ea = {};
       try {
         ea.__proto__ = da;
@@ -70,34 +68,19 @@
         f = b(e);
         f != e &&
           null != f &&
-          ia(c, d, {
-            configurable: !0,
-            writable: !0,
-            value: f,
-          });
+          ia(c, d, { configurable: !0, writable: !0, value: f });
       }
     },
     la = function (a) {
       var b = 0;
       return function () {
-        return b < a.length
-          ? {
-              done: !1,
-              value: a[b++],
-            }
-          : {
-              done: !0,
-            };
+        return b < a.length ? { done: !1, value: a[b++] } : { done: !0 };
       };
     },
     ma = function (a) {
       var b =
         "undefined" != typeof Symbol && Symbol.iterator && a[Symbol.iterator];
-      return b
-        ? b.call(a)
-        : {
-            next: la(a),
-          };
+      return b ? b.call(a) : { next: la(a) };
     };
   ka("Promise", function (a) {
     function b() {
@@ -165,10 +148,7 @@
       }
       var k = this,
         m = !1;
-      return {
-        resolve: g(this.T),
-        reject: g(this.H),
-      };
+      return { resolve: g(this.T), reject: g(this.H) };
     };
     e.prototype.T = function (g) {
       if (g === this)
@@ -1319,11 +1299,7 @@
     }
   };
   l(Mc, Kc);
-  var Lc = {
-    2: "touch",
-    3: "pen",
-    4: "mouse",
-  };
+  var Lc = { 2: "touch", 3: "pen", 4: "mouse" };
   Mc.prototype.stopPropagation = function () {
     Mc.Ca.stopPropagation.call(this);
     this.g.stopPropagation
@@ -1841,11 +1817,7 @@
         d.start(f, a + c / 1e3))
       : d.start(f, a + c / 1e3, g);
     e = this.V++;
-    this.i[e] = {
-      node: d,
-      $b: 1e3 * f - c,
-      Nc: b,
-    };
+    this.i[e] = { node: d, $b: 1e3 * f - c, Nc: b };
     return e;
   };
   var Bd = function (a, b) {
@@ -2439,90 +2411,27 @@
   };
   ha(Qe, Ke);
   var Pe = [
-      {
-        filename: "cta-png-sprite.png",
-        size: [217, 80],
-      },
-      {
-        filename: "main-png-sprite.png",
-        size: [1381, 1467],
-      },
-      {
-        filename: "level1-png-sprite.png",
-        size: [3617, 820],
-      },
-      {
-        filename: "level1-png1-sprite.png",
-        size: [717, 295],
-      },
-      {
-        filename: "level1-jpg-sprite.png",
-        size: [1283, 360],
-      },
-      {
-        filename: "gameover-png-sprite.png",
-        size: [441, 119],
-      },
-      {
-        filename: "level2-png-sprite.png",
-        size: [5929, 378],
-      },
-      {
-        filename: "level2-jpg-sprite.png",
-        size: [640, 360],
-      },
-      {
-        filename: "level3-png-sprite.png",
-        size: [2458, 779],
-      },
-      {
-        filename: "level3-jpg-sprite.png",
-        size: [640, 360],
-      },
-      {
-        filename: "level4-png-sprite.png",
-        size: [5586, 393],
-      },
-      {
-        filename: "level4-jpg-sprite.png",
-        size: [640, 360],
-      },
-      {
-        filename: "level5-png-sprite.png",
-        size: [1251, 1710],
-      },
-      {
-        filename: "level5-png1-sprite.png",
-        size: [4187, 723],
-      },
-      {
-        filename: "level5-png2-sprite.png",
-        size: [2566, 1165],
-      },
-      {
-        filename: "level5-png3-sprite.png",
-        size: [4035, 360],
-      },
-      {
-        filename: "level5-jpg-sprite.jpg",
-        size: [2703, 1069],
-      },
-      {
-        filename: "end-png-sprite.png",
-        size: [2360, 1244],
-      },
-      {
-        filename: "end-png1-sprite.png",
-        size: [2428, 183],
-      },
-      {
-        filename: "end-jpg-sprite.png",
-        size: [640, 360],
-      },
-      {
-        filename: "main-jpg-sprite.jpg",
-        size: [1283, 280],
-      },
+      { filename: "cta-png-sprite.png", size: [217, 80] },
+      { filename: "main-png-sprite.png", size: [1381, 1467] },
+      { filename: "level1-png-sprite.png", size: [3617, 820] },
+      { filename: "level1-png1-sprite.png", size: [717, 295] },
+      { filename: "level1-jpg-sprite.png", size: [1283, 360] },
+      { filename: "gameover-png-sprite.png", size: [441, 119] },
+      { filename: "level2-png-sprite.png", size: [5929, 378] },
+      { filename: "level2-jpg-sprite.png", size: [640, 360] },
+      { filename: "level3-png-sprite.png", size: [2458, 779] },
+      { filename: "level3-jpg-sprite.png", size: [640, 360] },
+      { filename: "level4-png-sprite.png", size: [5586, 393] },
+      { filename: "level4-jpg-sprite.png", size: [640, 360] },
+      { filename: "level5-png-sprite.png", size: [1251, 1710] },
+      { filename: "level5-png1-sprite.png", size: [4187, 723] },
+      { filename: "level5-png2-sprite.png", size: [2566, 1165] },
+      { filename: "level5-png3-sprite.png", size: [4035, 360] },
+      { filename: "level5-jpg-sprite.jpg", size: [2703, 1069] },
+      { filename: "end-png-sprite.png", size: [2360, 1244] },
+      { filename: "end-png1-sprite.png", size: [2428, 183] },
+      { filename: "end-jpg-sprite.png", size: [640, 360] },
+      { filename: "main-jpg-sprite.jpg", size: [1283, 280] },
     ],
     Re = [1, 1315, 1130, 46, 24],
     Se = [1, 421, 1200, 43, 32],
@@ -2767,14 +2676,7 @@
       this.ya = this.ha = this.time = 0;
       this.U = !1;
       qa(a[0])
-        ? (this.s = {
-            Aa: a,
-            duration: 0,
-            x: 0,
-            y: 0,
-            z: null,
-            children: null,
-          })
+        ? (this.s = { Aa: a, duration: 0, x: 0, y: 0, z: null, children: null })
         : ((this.ma = a), (this.s = this.ma[this.ya]));
       this.Cc = b ? b : ra;
     };
@@ -2846,14 +2748,7 @@
     },
     oj = function (a, b) {
       a.ma = null;
-      a.s = {
-        Aa: b,
-        duration: 0,
-        x: 0,
-        y: 0,
-        z: null,
-        children: null,
-      };
+      a.s = { Aa: b, duration: 0, x: 0, y: 0, z: null, children: null };
     };
   var pj = function (a, b, c, d, e, f) {
     y.call(this, c, null, this.Xa);
@@ -3084,17 +2979,7 @@
     b.Hb = a * this.W;
     $a(b);
   };
-  var Aj = {
-      Pc: 0,
-      Qc: 1,
-      Rc: 2,
-      Sc: 3,
-      Tc: 4,
-      Uc: 5,
-      Vc: 6,
-      Wc: 7,
-      Xc: 8,
-    },
+  var Aj = { Pc: 0, Qc: 1, Rc: 2, Sc: 3, Tc: 4, Uc: 5, Vc: 6, Wc: 7, Xc: 8 },
     Bj = [],
     Cj = 0,
     Dj;
@@ -3169,14 +3054,7 @@
       for (var b = [], c = 0; c < a.length; c++) b.push(Wj[a[c]]);
       return b;
     },
-    Wj = {
-      "|": 0,
-      "^": 1,
-      "-": 2,
-      v: 3,
-      z: 6,
-      3: 4,
-    },
+    Wj = { "|": 0, "^": 1, "-": 2, v: 3, z: 6, 3: 4 },
     Uj = function (a, b) {
       var c = (2 * a * Math.PI) / 360;
       return new p(320 + Math.cos(c) * b, Math.sin(c) * b + 203);
@@ -4841,11 +4719,7 @@
     a = Ij[a];
     if (this.rb()) Ul(this, a);
     else {
-      V(Nl, 11, {
-        Pa: this.Pa,
-        position: bb(this),
-        color: a,
-      });
+      V(Nl, 11, { Pa: this.Pa, position: bb(this), color: a });
       this.ka(3);
       var b = this;
       xb(
@@ -4871,11 +4745,7 @@
       Nl.removeListener(a);
       a.ka(5);
       U(a, 6, a.yc);
-      V(Nl, 5, {
-        Pa: a.Pa,
-        position: bb(a),
-        color: b,
-      });
+      V(Nl, 5, { Pa: a.Pa, position: bb(a), color: b });
       K.g.wc.play();
     },
     Vl = function (a) {
@@ -5603,10 +5473,7 @@
           m = !0;
         } else m = !1;
         return m;
-      }) || {
-        x: 0,
-        y: 0,
-      };
+      }) || { x: 0, y: 0 };
       var k = Oe(Qe.$(), b) / 2;
       return new Bm(g.x + k + f, g.y + k, k, a, b, c, d, e);
     },
@@ -6582,26 +6449,11 @@
   var Sn = function (a, b) {
     var c = F([
       0,
-      [
-        {
-          Aa: Eh,
-          duration: 0,
-        },
-      ],
+      [{ Aa: Eh, duration: 0 }],
       1,
-      [
-        {
-          Aa: Eh,
-          duration: 0,
-        },
-      ],
+      [{ Aa: Eh, duration: 0 }],
       2,
-      [
-        {
-          Aa: Fh,
-          duration: 0,
-        },
-      ],
+      [{ Aa: Fh, duration: 0 }],
       3,
       T(Pn, Qn, 0, 0),
       4,
@@ -6647,15 +6499,8 @@
     1 == this.state && (a += 0.1 * Math.max(0, Math.sin(this.ha / 100)));
     x(this, a);
   };
-  var Wn = {
-      2: !0,
-      3: !0,
-    },
-    Xn = {
-      0: !0,
-      1: !0,
-      4: !0,
-    };
+  var Wn = { 2: !0, 3: !0 },
+    Xn = { 0: !0, 1: !0, 4: !0 };
   Sn.prototype.ka = function (a) {
     this.state == a ||
       (3 == this.state && 2 == a) ||
@@ -7160,12 +7005,7 @@
           (d = Math.max(e, 1 < d ? d - 1 : d - 0.1)),
             (a.font = " " + d + "px " + c);
       a.font = k;
-      return {
-        lines: m,
-        fontFamily: c,
-        fontSize: d,
-        fontStyle: "",
-      };
+      return { lines: m, fontFamily: c, fontSize: d, fontStyle: "" };
     },
     wo = function (a, b, c) {
       b = b.match(/[^\s-]+-?/g);
@@ -7411,11 +7251,7 @@
             {
               type: "http://schema.org/WebPage",
               id: location.protocol + "//" + location.host,
-              properties: {
-                url: [this.T],
-                name: [this.ha],
-                image: [this.U],
-              },
+              properties: { url: [this.T], name: [this.ha], image: [this.U] },
             },
           ],
         },
@@ -7466,86 +7302,22 @@
         Ho(5));
     };
   var Cm = [
-    {
-      Aa: ef,
-      x: 350,
-      y: 141,
-    },
-    {
-      Aa: ff,
-      x: 350,
-      y: 141,
-    },
-    {
-      Aa: gf,
-      x: 431,
-      y: 141,
-    },
-    {
-      Aa: hf,
-      x: 431,
-      y: 141,
-    },
-    {
-      Aa: jf,
-      x: 511,
-      y: 141,
-    },
-    {
-      Aa: kf,
-      x: 511,
-      y: 141,
-    },
-    {
-      Aa: zh,
-      x: 0,
-      y: 0,
-    },
-    {
-      Aa: ai,
-      x: 528,
-      y: 231,
-    },
-    {
-      Aa: bi,
-      x: 528,
-      y: 231,
-    },
-    {
-      Aa: ci,
-      x: 474,
-      y: 231,
-    },
-    {
-      Aa: di,
-      x: 474,
-      y: 231,
-    },
-    {
-      Aa: ei,
-      x: 366,
-      y: 231,
-    },
-    {
-      Aa: fi,
-      x: 366,
-      y: 231,
-    },
-    {
-      Aa: gi,
-      x: 445,
-      y: 231,
-    },
-    {
-      Aa: hi,
-      x: 420,
-      y: 231,
-    },
-    {
-      Aa: ii,
-      x: 420,
-      y: 231,
-    },
+    { Aa: ef, x: 350, y: 141 },
+    { Aa: ff, x: 350, y: 141 },
+    { Aa: gf, x: 431, y: 141 },
+    { Aa: hf, x: 431, y: 141 },
+    { Aa: jf, x: 511, y: 141 },
+    { Aa: kf, x: 511, y: 141 },
+    { Aa: zh, x: 0, y: 0 },
+    { Aa: ai, x: 528, y: 231 },
+    { Aa: bi, x: 528, y: 231 },
+    { Aa: ci, x: 474, y: 231 },
+    { Aa: di, x: 474, y: 231 },
+    { Aa: ei, x: 366, y: 231 },
+    { Aa: fi, x: 366, y: 231 },
+    { Aa: gi, x: 445, y: 231 },
+    { Aa: hi, x: 420, y: 231 },
+    { Aa: ii, x: 420, y: 231 },
   ];
   var Yo = yj.$(),
     Zo = function (a, b, c) {
@@ -7584,7 +7356,12 @@
             f = Wo(d.o);
           Ae() ||
             ((e = To(e)),
-            new Ro(e, window.google.doodle.alt || "", f, "/share.png").s());
+            new Ro(
+              e,
+              window.google.doodle.alt || "",
+              f,
+              "https://www.google.com/logos/2016/halloween16/share.png"
+            ).s());
         },
         L("Share - G+")
       );
@@ -7615,10 +7392,7 @@
           var g = Vo();
           e = Wo(e);
           g = To(g);
-          g = Uo("mailto:", {
-            subject: Be,
-            body: e + "\n" + g,
-          });
+          g = Uo("mailto:", { subject: Be, body: e + "\n" + g });
           f.href = g;
         },
         L("Share - E-mail")
@@ -8758,14 +8532,7 @@
     yj.$().addListener(this);
   };
   sa($p);
-  var aq = {
-    0: !0,
-    1: !0,
-    5: !0,
-    10: !0,
-    11: !0,
-    12: !0,
-  };
+  var aq = { 0: !0, 1: !0, 5: !0, 10: !0, 11: !0, 12: !0 };
   $p.prototype.reset = function () {
     this.g = this.i = this.o = 0;
   };
@@ -9327,14 +9094,8 @@
           m = an.$(),
           w = se(),
           u = new Dq(
-            {
-              height: f,
-              width: g,
-            },
-            {
-              height: k,
-              width: c,
-            },
+            { height: f, width: g },
+            { height: k, width: c },
             function () {
               return w;
             }
@@ -9401,11 +9162,7 @@
         now: c,
         ad: Iq(this, 1e3, a),
         $c: Iq(this, 5e3, a),
-        hd: {
-          Lc: b,
-          kb: this.kb,
-          min: this.min,
-        },
+        hd: { Lc: b, kb: this.kb, min: this.min },
       };
     }
     this.i = a;
@@ -9426,11 +9183,7 @@
           (a.g[g] > e && (e = a.g[g]),
           a.g[g] < f && (f = a.g[g]),
           d.push(a.g[g]));
-      return {
-        Lc: Math.round(Wa.apply(null, d)),
-        kb: e,
-        min: f,
-      };
+      return { Lc: Math.round(Wa.apply(null, d)), kb: e, min: f };
     };
   var Lq = function (a, b) {
     window.google &&
