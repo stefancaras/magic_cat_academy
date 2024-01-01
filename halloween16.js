@@ -1904,10 +1904,10 @@
   H.j = G;
   H.H = vd;
   H.i = {
-    Fa: new Gd("./", "main"),
-    xc: new Gd("./", "initial"),
-    Kc: new Gd("./", "victory"),
-    Ua: new Gd("./", "end"),
+    Fa: new Gd("./sounds/", "main"),
+    xc: new Gd("./sounds/", "initial"),
+    Kc: new Gd("./sounds/", "victory"),
+    Ua: new Gd("./sounds/", "end"),
   };
   var I = H.i;
   H.g = {};
@@ -2435,7 +2435,7 @@
     b.restore();
   };
   var Qe = function () {
-    Ke.call(this, "./", Pe);
+    Ke.call(this, "./images/", Pe);
   };
   ha(Qe, Ke);
   var Pe = [
